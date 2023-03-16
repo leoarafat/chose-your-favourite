@@ -1,10 +1,23 @@
-import React from 'react';
+import React from "react";
+import { ThreeCircles } from "react-loader-spinner";
 
 const Loader = () => {
   return (
-    <div>
-      <div className="w-16 h-16 border-4 border-dashed rounded-full animate-spin dark:border-violet-400"></div>
-   
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+      }}
+    >
+      <ThreeCircles
+        height="100"
+        width="100"
+        color="#4fa94d"
+        visible={true}
+        ariaLabel="three-circles-rotating"
+      />
     </div>
   );
 };

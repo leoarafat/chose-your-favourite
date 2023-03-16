@@ -4,7 +4,6 @@ import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../context/AuthProvider/AuthProvider";
 
-
 const Login = () => {
   const [error, setError] = useState("");
   // const [success, setSuccess] = useState('');
@@ -43,7 +42,7 @@ const Login = () => {
     googleSignUp()
       .then((res) => {
         const user = res.user;
-        console.log(user);
+        // console.log(user);
 
         toast.success("Successfully Login!");
         navigate(from, { replace: true });
@@ -134,7 +133,7 @@ const Login = () => {
               </div>
             </div>
             <div className="space-x-4 text-center text-gray-500">
-              <span>&copy; StreamTube</span>
+              <span>&copy; Plan N Design</span>
               <Link href="#" className="text-sm hover:text-primary">
                 Contact
               </Link>
